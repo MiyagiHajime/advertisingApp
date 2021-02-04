@@ -57,3 +57,7 @@ gem "haml-rails", ">= 1.0", '<= 2.0.1'
 
 # pry-rails
 gem 'pry-rails'
+
+#bootstrap
+gem 'bootstrap', '~> 4.3.1'
+gem "jquery-ui-rails"
