@@ -1,86 +1,80 @@
-.TopWrapper
-  .head
-    .head-content
-      %p.text コンテンツ
-      %p.text コンテンツ
-      %p.text コンテンツ
-      %p.text コンテンツ
-  .main
-    %section.logo.main1
-      .texteria
-        %p.logo-text hello
-    %section.prodact
-      %article.card
-        .card__header
-          %figure.card__header--thumbnail
-            = link_to image_tag("pict/porkbara.jpeg",width: '100%', alt: "サンプル画像"),"###",{class: 'test-png'}
-        .card__body
-          %p.card__body--title Tシャツ
-          %p.card__body--text 今日買ったばかりの新品のシャツです。cvジェrjbぽ絵pbkdpvおdfbぽ絵rgヴィh米pbkskbペリjbg＠うぇp
-          %p.card__body--price 15,000円
-        .card__footer
-          %button.card__footer--btn
-            = link_to "新規投稿商品", '#', {class: 'test'}
-      %article.card
-        .card__header
-          %figure.card__header--thumbnail
-            = link_to image_tag("pict/porkbara.jpeg",width: '100%', alt: "サンプル画像"),"###",{class: 'test-png'}
-        .card__body
-          %p.card__body--title Tシャツ
-          %p.card__body--text 今日買ったばかりの新品のシャツです。cvジェrjbぽ絵pbkdpvおdfbぽ絵rgヴィh米pbkskbペリjbg＠うぇp
-          %p.card__body--price 15,000円
-        .card__footer
-          %button.card__footer--btn
-            = link_to "新規投稿商品", '#', {class: 'test'}
-      %article.card
-        .card__header
-          %figure.card__header--thumbnail
-            = link_to image_tag("pict/porkbara.jpeg",width: '100%', alt: "サンプル画像"),"###",{class: 'test-png'}
-        .card__body
-          %p.card__body--title Tシャツ
-          %p.card__body--text 今日買ったばかりの新品のシャツです。cvジェrjbぽ絵pbkdpvおdfbぽ絵rgヴィh米pbkskbペリjbg＠うぇp
-          %p.card__body--price 15,000円
-        .card__footer
-          %button.card__footer--btn
-            = link_to "新規投稿商品", '#', {class: 'test'}
-    %section.logo.main2
-      .texteria
-        %p.logo-text 今週のおすすめ！
-    %section.prodact
-      %article.card
-        .card__header
-          %figure.card__header--thumbnail
-            = link_to image_tag("pict/porkbara.jpeg",width: '100%', alt: "サンプル画像"),"###",{class: 'test-png'}
-        .card__body
-          %p.card__body--title Tシャツ
-          %p.card__body--text 今日買ったばかりの新品のシャツです。cvジェrjbぽ絵pbkdpvおdfbぽ絵rgヴィh米pbkskbペリjbg＠うぇp
-          %p.card__body--price 15,000円
-        .card__footer
-          %button.card__footer--btn
-            = link_to "新規投稿商品", '#', {class: 'test'}
-      %article.card
-        .card__header
-          %figure.card__header--thumbnail
-            = link_to image_tag("pict/porkbara.jpeg",width: '100%', alt: "サンプル画像"),"###",{class: 'test-png'}
-        .card__body
-          %p.card__body--title Tシャツ
-          %p.card__body--text 今日買ったばかりの新品のシャツです。cvジェrjbぽ絵pbkdpvおdfbぽ絵rgヴィh米pbkskbペリjbg＠うぇp
-          %p.card__body--price 15,000円
-        .card__footer
-          %button.card__footer--btn
-            = link_to "新規投稿商品", '#', {class: 'test'}
-      %article.card
-        .card__header
-          %figure.card__header--thumbnail
-            = link_to image_tag("pict/porkbara.jpeg",width: '100%', alt: "サンプル画像"),"###",{class: 'test-png'}
-        .card__body
-          %p.card__body--title Tシャツ
-          %p.card__body--text 今日買ったばかりの新品のシャツです。cvジェrjbぽ絵pbkdpvおdfbぽ絵rgヴィh米pbkskbペリjbg＠うぇp
-          %p.card__body--price 15,000円
-        .card__footer
-          %button.card__footer--btn
-            = link_to "新規投稿商品", '#', {class: 'test'}
-    %section
-    %section
-    %section
-  .footer
+= render 'top_view/head-temp'
+.main
+  %section.logo.main1
+    .texteria
+      %p.logo-text hello
+  %section.prodact
+    %article.card
+      .card__header
+        %figure.card__header--thumbnail
+          = link_to image_tag("pict/porkbara.jpeg",width: '100%', alt: "サンプル画像"),"###",{class: 'test-png'}
+      .card__body
+        %p.card__body--title Tシャツ
+        %p.card__body--text 今日買ったばかりの新品のシャツです。cvジェrjbぽ絵pbkdpvおdfbぽ絵rgヴィh米pbkskbペリjbg＠うぇp
+        %p.card__body--price 15,000円
+      .card__footer
+        %button.card__footer--btn
+          = link_to "新規投稿商品", '#', {class: 'test'}
+    %article.card
+      .card__header
+        %figure.card__header--thumbnail
+          = link_to image_tag("pict/porkbara.jpeg",width: '100%', alt: "サンプル画像"),"###",{class: 'test-png'}
+      .card__body
+        %p.card__body--title Tシャツ
+        %p.card__body--text 今日買ったばかりの新品のシャツです。cvジェrjbぽ絵pbkdpvおdfbぽ絵rgヴィh米pbkskbペリjbg＠うぇp
+        %p.card__body--price 15,000円
+      .card__footer
+        %button.card__footer--btn
+          = link_to "新規投稿商品", '#', {class: 'test'}
+    %article.card
+      .card__header
+        %figure.card__header--thumbnail
+          = link_to image_tag("pict/porkbara.jpeg",width: '100%', alt: "サンプル画像"),"###",{class: 'test-png'}
+      .card__body
+        %p.card__body--title Tシャツ
+        %p.card__body--text 今日買ったばかりの新品のシャツです。cvジェrjbぽ絵pbkdpvおdfbぽ絵rgヴィh米pbkskbペリjbg＠うぇp
+        %p.card__body--price 15,000円
+      .card__footer
+        %button.card__footer--btn
+          = link_to "新規投稿商品", '#', {class: 'test'}
+  %section.logo.main2
+    .texteria
+      %p.logo-text 今週のおすすめ！
+  %section.prodact
+    %article.card
+      .card__header
+        %figure.card__header--thumbnail
+          = link_to image_tag("pict/porkbara.jpeg",width: '100%', alt: "サンプル画像"),"###",{class: 'test-png'}
+      .card__body
+        %p.card__body--title Tシャツ
+        %p.card__body--text 今日買ったばかりの新品のシャツです。cvジェrjbぽ絵pbkdpvおdfbぽ絵rgヴィh米pbkskbペリjbg＠うぇp
+        %p.card__body--price 15,000円
+      .card__footer
+        %button.card__footer--btn
+          = link_to "新規投稿商品", '#', {class: 'test'}
+    %article.card
+      .card__header
+        %figure.card__header--thumbnail
+          = link_to image_tag("pict/porkbara.jpeg",width: '100%', alt: "サンプル画像"),"###",{class: 'test-png'}
+      .card__body
+        %p.card__body--title Tシャツ
+        %p.card__body--text 今日買ったばかりの新品のシャツです。cvジェrjbぽ絵pbkdpvおdfbぽ絵rgヴィh米pbkskbペリjbg＠うぇp
+        %p.card__body--price 15,000円
+      .card__footer
+        %button.card__footer--btn
+          = link_to "新規投稿商品", '#', {class: 'test'}
+    %article.card
+      .card__header
+        %figure.card__header--thumbnail
+          = link_to image_tag("pict/porkbara.jpeg",width: '100%', alt: "サンプル画像"),"###",{class: 'test-png'}
+      .card__body
+        %p.card__body--title Tシャツ
+        %p.card__body--text 今日買ったばかりの新品のシャツです。cvジェrjbぽ絵pbkdpvおdfbぽ絵rgヴィh米pbkskbペリjbg＠うぇp
+        %p.card__body--price 15,000円
+      .card__footer
+        %button.card__footer--btn
+          = link_to "新規投稿商品", '#', {class: 'test'}
+  %section
+  %section
+  %section
+.footer
