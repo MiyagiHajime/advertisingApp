@@ -17,4 +17,17 @@
   .card.card-body
     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
 .text
-  = link_to "マイページ", viewtests_path, {class: 'link-text'}
+  -# = link_to "マイページ", viewtests_path, {class: 'link-text'}
+.row
+  .col-3
+    #v-pills-tab.nav.flex-column.nav-pills{"aria-orientation" => "vertical", :role => "tablist"}
+      %a#v-pills-home-tab.nav-link.active{"aria-controls" => "v-pills-home", "aria-selected" => "true", "data-toggle" => "pill", :href => "#v-pills-home", :role => "tab"} Home
+      %a#v-pills-profile-tab.nav-link{"aria-controls" => "v-pills-profile", "aria-selected" => "false", "data-toggle" => "pill", :href => "#v-pills-profile", :role => "tab"} Profile
+      %a#v-pills-messages-tab.nav-link{"aria-controls" => "v-pills-messages", "aria-selected" => "false", "data-toggle" => "pill", :href => "#v-pills-messages", :role => "tab"} Messages
+      %a#v-pills-settings-tab.nav-link{"aria-controls" => "v-pills-settings", "aria-selected" => "false", "data-toggle" => "pill", :href => "#v-pills-settings", :role => "tab"} Settings
+  .col-9
+    #v-pills-tabContent.tab-content
+      #v-pills-home.tab-pane.fade.show.active{"aria-labelledby" => "v-pills-home-tab", :role => "tabpanel"} ...
+      #v-pills-profile.tab-pane.fade{"aria-labelledby" => "v-pills-profile-tab", :role => "tabpanel"} ...
+      #v-pills-messages.tab-pane.fade{"aria-labelledby" => "v-pills-messages-tab", :role => "tabpanel"} ...
+      #v-pills-settings.tab-pane.fade{"aria-labelledby" => "v-pills-settings-tab", :role => "tabpanel"} ...
